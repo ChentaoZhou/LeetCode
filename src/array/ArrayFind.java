@@ -1,14 +1,14 @@
-package Array;
+package array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-import SearchMethod.BinarySearch;
+import searchMethod.BinarySearch;
 
 public class ArrayFind {
 	public static boolean Find(int target, int [][] array) {
-    	int n = array.length;   //¶þÎ¬Êý×éÁÐÊý
-    	int h = array[0].length; //Ã¿ÐÐµÄ¸öÊý
+    	int n = array.length;   //ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    	int h = array[0].length; //Ã¿ï¿½ÐµÄ¸ï¿½ï¿½ï¿½
     	for(int i=n-1,j=0;i>=0 && j<h;) {
 //    			System.out.println("i: "+i+" j: "+j);
     			if(target == array[i][j]) return true;
@@ -21,8 +21,8 @@ public class ArrayFind {
 	
 
 //    public static boolean Find(int target, int [][] array) {
-//    	int n = array.length;   //¶þÎ¬Êý×éÁÐÊý
-//    	int h = array[0].length; //Ã¿ÐÐµÄ¸öÊý
+//    	int n = array.length;   //ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//    	int h = array[0].length; //Ã¿ï¿½ÐµÄ¸ï¿½ï¿½ï¿½
 //    	for(int i=0;i<n;i++) {
 //    		for(int j=0;j<h;j++) {
 //    			if(target == array[i][j]) return true;

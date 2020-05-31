@@ -1,4 +1,4 @@
-package Collecton;
+package collecton;
 
 import java.util.Stack;
 

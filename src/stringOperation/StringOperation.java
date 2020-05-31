@@ -1,4 +1,4 @@
-package StringOperation;
+package stringOperation;
 
 public class StringOperation {
 	public static String replaceSpace(String s) {
