@@ -28,7 +28,7 @@ public class FindNumsAppearOnce {
 	//找到第一个位为1的index
 	//根据这个index将数据所有数分为两部分
 	//将每个部分异或就得到了这两个数
-	public void FindNumsAppearOnce(int[] array, int num1[], int num2[]) {
+	public static void FindNumsAppearOnce(int[] array, int num1[], int num2[]) {
 		int bitSum = 0;
 		for(int i=0;i<array.length;i++) {
 			bitSum ^= array[i];
