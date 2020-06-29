@@ -4,6 +4,7 @@ public class NMatrixRotation {
 	//这个新算法的思路是，因为是正方形矩阵，每一个循环打出4次相同的长度，比如4*4矩阵，第一次循环每个边
 	//打出3个数字，正好构成第一圈。
 	public static int[][] solution(int n){
+		if(n<=0) return null;
 		int[][] res = new int[n][n];
 		int input = n;//用在最后补中间一个值用
 		int counter = 1;//打出来的值
