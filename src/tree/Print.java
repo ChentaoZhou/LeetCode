@@ -1,6 +1,7 @@
 package tree;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Print {
 	static ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
@@ -9,6 +10,7 @@ public class Print {
 		if(pRoot == null) return result;
 		int layer = 0;
 		printNode(pRoot,layer);
+		//int a = Collections.binarySearch(result.get(1),111 );
 		return result;
 
 	}

@@ -22,10 +22,10 @@ public class PrintZ {
 			while(!old.isEmpty()) {
 				TreeNode temp = old.pop();
 				res.get(layer-1).add(temp.val);
-				//å¥‡æ•°å±‚ï¼Œå…ˆåŠ å·¦å­å†å³å­
+				//Èç¹ûÆæÊı²ã£¬´Ó×óÍùÓÒ¡£²ãÊı´Ó1¿ªÊ¼Ëã¡£
 				if(temp.left!=null && layer%2 != 0)  curr.add(temp.left);
 				if(temp.right!=null && layer%2 != 0) curr.add(temp.right);
-				//å¶æ•°å±‚ï¼Œå…ˆåŠ å³å­å†å·¦å­
+				//Èç¹ûÅ¼Êı²ã£¬´ÓÓÒÍù×ó¡£
 				if(temp.right!=null && layer%2 == 0) curr.add(temp.right);
 				if(temp.left != null && layer%2 == 0) curr.add(temp.left);
 			}
