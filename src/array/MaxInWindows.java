@@ -40,10 +40,28 @@ public class MaxInWindows {
 		}
 		return res;
 	}
+	 public static ArrayList<Integer> maxInWindows3(int[] num, int size) {
+	      
+			ArrayList<Integer> result = new ArrayList<Integer>();
+	        	if(size <=0) return result;
+			    int s=0; int e=size-1;
+	        while(e<num.length){
+	            int max=-1;
+	            for(int i=s;i<=e;i++){
+	                max = Math.max(max,num[i]);
+	                
+	            }
+	            result.add(max);
+	            
+	            System.out.println("s: "+s+" e: "+e+"  result: "+max);
+	            s++;e++;
+	        }
+	        return result;
+		}
 	
 	public static void main(String[] args) {
-		int[] a = {9,3,4,2,6,2,5,1};
-		System.out.println(maxInWindows2(a,3));
+		int[] a = {2,3,4,2,6,2,5,1};
+		System.out.println(maxInWindows3(a,3));
 		
 		
 		
