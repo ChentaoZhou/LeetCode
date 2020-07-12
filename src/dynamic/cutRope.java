@@ -15,7 +15,7 @@ public class cutRope {
 		  
 		  
 		  for(int i = 5;i<=target;i++) {
-			  for(int j = 1;j<i;j++) {
+			  for(int j = 1;j<5;j++) {
 				  results[i] = Math.max(results[i], j*results[i-j]); 
 			  }
 			  
