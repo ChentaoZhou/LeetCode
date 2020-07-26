@@ -13,7 +13,7 @@ public class NMatrixRotation {
 		n = n-1;		//n为一次循环要打出的数量
 		while(n>0) {
 			x++;
-			y--;	//打完一圈转移到下一圈起始位置
+			y--;	//打完一圈转移到下一圈起始位置 
 			//从右上 到 右下
 			for(int i =0;i<n;i++) {
 				res[x++][y] = counter++;
@@ -40,7 +40,7 @@ public class NMatrixRotation {
 	}
 	
 	public static void main(String[] args) {
-		  int n = 6;
+		  int n = 5;
 		  int[][] res = solution(n);
 		  for(int i = 0; i < n; i++) {
 		   for(int j = 0; j < n; j++)

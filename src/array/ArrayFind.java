@@ -7,8 +7,8 @@ import searchMethod.BinarySearch;
 
 public class ArrayFind {
 	public static boolean Find(int target, int [][] array) {
-    	int n = array.length;   //��ά��������
-    	int h = array[0].length; //ÿ�еĸ���
+    	int n = array.length;   
+    	int h = array[0].length; 
     	for(int i=n-1,j=0;i>=0 && j<h;) {
 //    			System.out.println("i: "+i+" j: "+j);
     			if(target == array[i][j]) return true;
