@@ -23,24 +23,22 @@ public class NMatrixXXX {
 		else {
 			int tempstart2 = start2;
 			while(tempstart2<=end2) {
-				System.out.println("1: "+matrix[start1][tempstart2]);
-				res.add(matrix[start1][tempstart2++]);
 				
+				res.add(matrix[start1][tempstart2++]);
 			}
-
 			int tempstart1 = start1+1;
 			while(tempstart1<=end1) {
-				System.out.println("2: "+matrix[tempstart1][end2]);
+				
 				res.add(matrix[tempstart1++][end2]);
 			}
 			int tempend2 = end2-1;
 			while(tempend2>=start2) {
-				System.out.println("3: "+matrix[end1][tempend2]);
+				
 				res.add(matrix[end1][tempend2--]);
 			}
 			int tempend1 = end1-1; 
 			while(tempend1>=start1+1) {
-				System.out.println("4: "+matrix[tempend1][start2]);
+				
 				res.add(matrix[tempend1--][start2]);
 			}
 		}
